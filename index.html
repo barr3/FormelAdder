@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formelverktyg</title>
+
+    <script defer src="./main.js"> </script>
+    <link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+    
+  </head>
+  <body>
+
+    <main>
+
+      <div id="formElements">
+	
+	<form id="form">
+
+
+	  <div class="inputItem">
+	    <label for="title"> Namn på formel </label>	    
+	    <input type="text" name="title" id="title" />
+	  </div>
+
+	  <div class="inputItem">
+	    <label for="latex"> LaTeX för formeln <a href="">se mer</a> </label>
+	    <input type="text" name="latex" id="latex" />
+	  </div>
+
+	  <div class="inputItem">
+	    <label for="var"> Variabler som ingår i formeln (ej konstanter), separera värdena med ett semikolon </label>
+	    <input type="text" name="var" id="var" />
+	  </div>
+
+	  <div class="inputItem">
+	    <label for="exp"> Förklaring för formeln </label>
+	    <textarea name="exp" id="exp"></textarea>
+	  </div>
+	</form>
+
+	<button onclick="submit()" type="submit" > Skicka in </button> 
+
+      </div>
+      
+    </main>
+    
+  </body>
+</html>
